@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+
+        h1.main_header
+        {
+            color: tomato;
+            
+        }
+
+        body
+        {
+            background-color: antiquewhite;
+            
+        }
+        p
+        {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        hr.header_hr, hr
+    {
+        
+        border: 15;
+        border-top: 3px double #034e315c;
+        
+        
+    }
+
+
+        /* Top bar for navigation */
+   
+        .topnav {
+        background-color: rgb(1, 78, 55);
+        overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+        float: left;
+        color: coral;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+        background-color:cornsilk;
+        color:tomato;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+        }
+
+
+
+        /* The following are the CSS style rules for the hover menu used to access different Meduzosa classes */
+        /* Style the tab */
+        .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: rgb(1, 78, 55);
+        width: 12%;
+        height: 1300px;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+        display:block;
+        background-color:inherit;
+        color: tomato;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: cornsilk;
+        color: tomato;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+        background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid whitesmoke;
+        width: 70%;
+        border-left: none;
+        height: 1200px;
+        display: none;
+        }
+
+
+
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meduzosa</title>
+
+    
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="main" href="index.html">Main Page</a>
+        <a href="meduzosa.html">Meduzosa</a>
+        <a href="anthozoa.html">Anthozoa</a>
+        <a href="hydrozoa.html">Hydrozoa</a>
+        <a href="predators.html">Predators</a>
+        <a href="cnidocytes.html">Cnidocytes</a>
+        <a href="life_stages.html">Life Stages</a>
+      </div> 
+
+    <script>
+
+        function openjellyfish(evt, jellyfish) 
+        {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) 
+            {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(jellyfish).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        } 
+
+    </script>
+
+<h1 class="main_header">Subphylum Medusozoa</h1>
+
+
+    
+    <p>
+        There are more than 2000 known species of jellyfish, however some scientists believe that there could be as many as 300,000 species of jellyfish who remain yet undiscovered. Of the 2000 known species of jellyfish only about 70 of them known to be harmly or deadly to humans. Of these species that are harmful to humans the Box Jellyfish of which chiefly occupies the class of Cubozoa is the most dangerous, and can be fatal to humans. There are, as of 2018, 51 known species of Box Jellyfish.
+        <br><br>
+        Jellyfish stings are commonplace around the world with an estimated 150 million jellyfish stings occuring around the world every year. 
+    </p>
+
+    <hr>
+
+    <div class="tab">
+        
+        <button class="tablinks" onmouseover="openjellyfish(event, 'Classes')">Meduzosa Classes</button>
+        <button class="tablinks" onmouseover="openjellyfish(event, 'LifeStages')">Life Stages</button>
+        <button class="tablinks" onmouseover="openjellyfish(event, 'Scyphozoa')">Scyphozoa</button>
+        <button class="tablinks" onmouseover="openjellyfish(event, 'Hydrozoa')">Hydrozoa</button>
+        <button class="tablinks" onmouseover="openjellyfish(event, 'Cubozoa')">Cubozoa</button>
+        <button class="tablinks" onmouseover="openjellyfish(event, 'Staurozoa')">Staurozoa</button>
+        <button class="tablinks" onmouseover="openjellyfish(event, 'Polypodiozoa')">Polypodiozoa</button>
+      </div>
+
+        <div id="Classes" class="tabcontent">
+        <h3>Classes of Meduzosa</h3>
+        <p><b>Classes of Subphylum Meduzosa:</b><br><br>
+            
+            Meduzosa includes the classes: <b>Hydrozoa, Scyphozoa (True Jellyfish), Staurozoa, and Cubozoa</b>. Members of Meduzosa are distinguished from the other members of Phylum Cnidaria by a life cycle called the Medusa stage; This medusa stage is when a jellyfish is in its most recognizable and iconic form.  
+        </div>
+
+        <div id="LifeStages" class="tabcontent">
+        <h3>Life Cycle of a Jellyfish</h3>
+        <p>
+            Greater information about the life stages of jellyfish can be found <a href="life_stages.html">here</a>.
+        
+            <br><br>
+            <img src="images/LifestagesofJellyfish.jpeg" width="500px">
+        
+        </p>
+      </div>
+
+
+      <div id="Scyphozoa" class="tabcontent">
+        <h3>Scyphozoa</h3>
+        <p>
+            <b>Scyphozoa:</b><br><br>
+            A class of exclusively marine jellyfish; There are no members of this class that live in fresh water. Members of this family are refered to as "True Jellyfish". The class name Scyphozoa is greek and likens the dome shapes of the members of this class of Meduzosa to drinking cups.
+            <br>
+            <br>
+            Below an image of a Scyphozoan jellyfish called the "Cauliflour Jellyfish"
+        </p>
+        <img src="images/scyphozoa.jpg">
+      </div>
+
+      <div id="Hydrozoa" class="tabcontent">
+        <h3>Hydrozoa</h3>
+        <p> 
+            Find out more about the Hydrozoans <a href="hydrozoa.html">here</a>
+        </p>
+        <img src="images/Turritopsis_dohrnii.jpg">
+      </div>
+      
+      <div id="Cubozoa" class="tabcontent">
+        <h3>Cubozoa</h3>
+        <p>
+            These are also known as Box Jellyfish because of their bells that look like boxes. There are some varieties of Cubozoan Jellyfish which are highly venomous.
+            These species have a well developed nervous system compared to other species of Jellyfish.these have complex retina and eyes. The cubozoa Jellyfish engage themselves in very elaborate courtship behavior.
+
+            Below a species of Box Jelly catches a fish
+            
+
+        </p>
+
+        <img src="images/box_jelly_catch.jpeg">
+      </div>
+      
+      <div id="Staurozoa" class="tabcontent">
+        <h3>Staurozoa</h3>
+        <p>There is one extant order in Staurozoa: "Stauromedusae" also known as the stalked jellyfishes. This class of Jellyfish do not float in water but remained attached to seaweed or rocks throughout their life. They are usually found in cold water and are shaped like a trumpet. They display the utmost beauty and camouflaging techniques. </p>
+
+        <p>Staurozoa is a class of Medusozoa, jellyfishes and hydrozoans. It has one extant order: Stauromedusae (stalked jellyfishes). A fossil group called Conulariida has been proposed as a second order, although this is highly speculative. The extinct order is largely unknown and described as a possibly cnidarian clade of marine life with shell-like structures, the Conulariida. Staurozoans are small animals (1–4 cm or 0.4–1.6 in) that live in marine environments, usually attached to seaweeds, rocks, or gravel. They have a large antitropical distribution, a majority found in boreal or polar, near-shore, and shallow waters. Few staurozoans are found in warmer tropical and subtropical water environments of the Atlantic, Indian, and Pacific Ocean basins, but most are known from the Northern Hemisphere. Over the years their number of species has increased, thus right now it is said to have an estimated 50 species. 
+        </p>
+        <img src="images/staurozoa.jpg">
+
+      </div>
+      
+      <div id="Polypodiozoa" class="tabcontent">
+        <h3>Polypodiozoa</h3>
+        <p>
+            information about polypodiozoa
+        </p>
+
+       </div>
+
+
+
+       
+            
+
+
+</body>
+</html>

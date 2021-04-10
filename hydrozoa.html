@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <style>
+
+        h1.main_header
+                {
+                    color: tomato;
+                    
+                }
+    
+                body
+                {
+                    background-color: antiquewhite;
+                    
+                    /*background-image: url(images/jellyfish1.jpeg);*/
+                }
+                p
+                {
+                    color: black;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+    
+                hr.header_hr, hr
+    {
+        
+        border: 15;
+        border-top: 3px double #034e315c;
+        
+        
+    }
+
+
+                /* Top bar for navigation */
+                .topnav {
+                background-color: rgb(1, 78, 55);
+                overflow: hidden;
+                }
+    
+                /* Style the links inside the navigation bar */
+                .topnav a {
+                float: left;
+                color: coral;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                }
+    
+                /* Change the color of links on hover */
+                .topnav a:hover {
+                background-color:cornsilk;
+                color:tomato;
+                }
+    
+                /* Add a color to the active/current link */
+                .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
+                }
+    
+        
+        /* The following are the CSS style rules for the hover menu used to access different hydrozoan classes */
+        /* Style the tab */
+        .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: rgb(1, 78, 55);
+        width: 12%;
+        height: 1300px;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+        display:block;
+        background-color:inherit;
+        color: tomato;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: cornsilk;
+        color: tomato;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+        background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid whitesmoke;
+        width: 70%;
+        border-left: none;
+        height: 1200px;
+        display: none;
+        }
+
+
+        </style>
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydras</title>
+
+
+</head>
+<body>
+    
+
+    <div class="topnav">
+        <a class="main" href="index.html">Main Page</a>
+        <a href="meduzosa.html">Meduzosa</a>
+        <a href="anthozoa.html">Anthozoa</a>
+        <a href="hydrozoa.html">Hydrozoa</a>
+        <a href="predators.html">Predators</a>
+        <a href="cnidocytes.html">Cnidocytes</a>
+        <a href="life_stages.html">Life Stages</a>
+      </div> 
+
+
+
+    <script>
+
+        function openHydrozoa(evt, hydrozoa) 
+            {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+    
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) 
+                {
+                    tabcontent[i].style.display = "none";
+                }
+    
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+    
+                // Show the current tab, and add an "active" class to the link that opened the tab
+                document.getElementById(hydrozoa).style.display = "block";
+                evt.currentTarget.className += " active";
+    
+            } 
+    
+    
+        </script>
+    
+    
+        <h1 class="main_header">Class Hydrozoa</h1>
+        
+        <p>
+            Some of the most fascinating and inspiring Cnidarians reside as members of the class Hydrozoa, not least of which are the <b>Siphonophores</b>; Colonial organisms like the Portuguese Man o' War that, although they appear to be comprised of a single organism, are really comprised of a host of separate organisms all with their own seperate functions and responsabilities. <b>That's what Cnidarians call teamwork!</b>
+        </p>
+        <p>
+            Another fascinating member of the Hydrozoan class is "Turritopsis Dohrnii" (pictured below), and organism that is capable of reverting to a sexually immature version of itself in effect making it capable of living eternally.
+        </p>
+
+        <p>
+            Hydrozoa includes nearly 3,200 species; most are marine, although some freshwater species are known (see the figure below). Animals in this class are polymorphs, and most exhibit both polypoid and medusoid forms in their lifecycle, although this is variable.
+            
+            The polyp form in these animals often shows a cylindrical morphology with a central gastrovascular cavity lined by the gastrodermis. The gastrodermis and epidermis have a simple layer of mesoglea sandwiched between them. A mouth opening, surrounded by tentacles, is present at the oral end of the animal.
+            
+            Many hydrozoans form colonies that are composed of a branched colony of specialized polyps that share a gastrovascular cavity, such as in the colonial hydroid Obelia. Colonies may also be free-floating and contain medusoid and polypoid individuals in the colony as in Physalia (the Portuguese Man O’ War) or Velella (By-the-wind sailor). Even other species are solitary polyps (Hydra) or solitary medusae (Gonionemus). The true characteristic shared by all of these diverse species is that their gonads for sexual reproduction are derived from epidermal tissue, whereas in all other cnidarians they are derived from gastrodermal tissue.
+        </p>
+    
+        <img src="images/Turritopsis_dohrnii.jpg">
+
+
+        <hr>
+    
+        <div class="tab">
+            
+            <button class="tablinks" onmouseover="openHydrozoa(event, 'generalInfo')">General Information</button>
+            <hr>
+            <button class="tablinks" onmouseover="openHydrozoa(event, 'hydroidolina')">Hydroidolina</button>
+            <p style="font-size: 11px;text-align: center;">Orders</p>
+            <button class="tablinks" onmouseover="openHydrozoa(event, 'anthoathecata')">Anthoathecata</button>
+            <hr>
+            <button class="tablinks" onmouseover="openHydrozoa(event, 'trachylinae')">Trachylinae</button>
+            <p style="font-size: 11px;text-align: center;">Orders</p>
+            <button class="tablinks" onmouseover="openHydrozoa(event, 'actinulidae')">Actinulidae</button>
+            <hr>
+            <button class="tablinks" onmouseover="openHydrozoa(event, 'notableHydrozoans')">Notable Hydrozoans</button>
+            
+        </div>
+    
+            <div id="generalInfo" class="tabcontent">
+            <h3>Classes of Anthozoa</h3>
+            <p><b>General information:</b><br><br>
+                Hydrozoa
+                
+                <p>
+                Hydrozoa is a class within the phylum Cnidaria, which includes sea anemones, corals, and jellyfish. The vast majority are marine species, but freshwater hydrozoans are known, for example, Cordylophora lacustris and Craspedacusta sowerbyi.
+                
+                Two main body forms exist in hydrozoans: a polypoid structure which is sessile, remaining in the same place, and a medusoid form which is free-swimming. The polyp consists of a stalklike structure that bears a number of tentacles surrounding a mouth. The medusa
+                </p>
+
+                <b>KEY TERMS</b>
+                <ul>
+                <li>Medusoid —The generative bud of a sessile hydro-zoa that resembles a Medusa’s head.</li>
+                
+                <li>Pelagic —Refers to the open ocean.</li>
+                
+                <li>Polyp —Mature hydrozoa distinguished by a cylindrical body that has an oral opening surrounded by tentacles and an arboreal end that may be fixed in </li>
+                
+                <li>Sessile —Attached to a firm substrate.</li>
+                </ul>
+
+                <p>
+                is a bell-like structure, with the tentacles surrounding the mouth underneath. Some species are solitary, but the majority is colonial. In the latter, the colony arises from a single basal root, which rests on the substrate and from which individual polyps arise. Both colonial and individual species lack a hard outer skeleton.
+                
+                A special feature among colonial species is the presence of individual polyps that perform separate roles. Some polyps are, for example, specialized for feeding (gastrozooids), while others are responsible for reproduction (gonozooids) or defense. While most colonial sessile species are small and feed by filtering zooplankton from the surrounding water currents, some of the medusoid forms are quite large and capable of feeding on small fish. Floating pelagic species such as Porpita and Velella, or the by-the-wind-sailor, as it is commonly known, resemble small jellyfish and may reach 1.5-2.5 in (4-6 cm) in diameter. These are colonial species made up of large numbers of gastrozooids and gonozooids; the body is modified into a flattened structure with a float on the upper surface to provide buoyancy. Some species, such as Velella have an additional small “sail” on the upper surface to catch the wind and assist further with dispersal.              
+                </p>
+            </div>
+    
+            <div id="hydroidolina" class="tabcontent">
+            <h3>Subclass Hydroidolina</h3>
+            <p>
+                <b>Subclass Hydroidolina:</b><br><br>
+                Hydroidolina is a subclass of hydrozoans in the phylum Cnidaria. It contains the bulk of the paraphyletic "Hydroida" which were one of the main groupings of the class Hydrozoa in older classifications and were placed at order rank. Hydroidolina also includes, however, the highly advanced colonial jellies of Siphonophora, which were not included in the "Hydroida".
+            </p> 
+            <img src="images/hydrolinia.jpg">
+            <p>
+                Siphonophores are in the class Hydrozoa. Siphonophores are colonial hydrozoans that do not exhibit alternation of generations, but instead reproduce asexually through a budding process. Zooids are the multicellular units that build the colonies. A single bud called the pro-bud initiates the growth of a colony by undergoing fission. Each zooid is produced to be genetically identical; however, mutations can alter their functions and increase diversity of the zooids within the colony. Siphonophores are unique in that the pro-bud initiates the production of diverse zooids with specific functions. The functions and organizations of the zooids in colonies widely vary among the different species; however, the majority of colonies are bilaterally arranged with dorsal and ventral sides to the stem. The stem is the vertical branch in the center of the colony to which the zooids attach. Zooids typically have special functions, and thus assume specific spatial patterns along the stem.
+            </p>
+            <img src="images/siphonophore0.jpeg">
+
+            </div>
+            <div id="anthoathecata" class="tabcontent">
+                <p>
+                    Anthoathecata, or the athecate hydroids, are an order of hydrozoans belonging to the phylum Cnidaria. A profusion of alternate scientific names exists for this long-known, heavily discussed, and spectacular group. It has also been called Gymnoblastea and (with or without an emended ending -ae), Anthomedusa, Athecata, Hydromedusa, and Stylasterina. There are about 1,200 species worldwide.
+                </p>
+
+                <p>
+                    These hydrozoans always have a polyp stage. Their hydranths grow either solitary or in colonies. There is no firm perisarc around the polyp body. The medusae, or jellyfish, are solitary animals, with tentacles arising from the bell margin, lacking statocysts but possessing radial canals. Their gonads are on the manubrium ("handle").
+                </p>
+                <p>
+                    Except in Eudendriidae and Laingiidae, prey can be captured by discharging harpoon-like structures (desmonemes) from chambers (cnidae) in specialized cells (nematocysts) on the tentacles. In hydrozoans, these are nearly always adhesive and entrapping, rather than puncturing and poisoned as in other jellys.
+                </p>
+                <img src="images/anthoathecata.jpg">
+               
+
+            </div>
+    
+            <div id="trachylinae" class="tabcontent">
+            <h3>Subclass Trachylinae</h3>
+            <p>
+                <b>Subclass Trachylinae:</b><br><br>
+                Trachylinae (also Trachylina, Trachylinida, etc.) is a subclass of hydrozoans. It is placed at order rank in many older classifications, and limited to contain the Narcomedusae and Trachymedusae. But the Actinulidae, then considered an independent order, and probably also the Limnomedusae which were traditionally placed in the paraphyletic "Hydroida", belong to this group too. It is not entirely clear whether the Limnomedusae and the Trachymedusae as conventionally circumscribed are monophyletic
+                The freshwater jelly Craspedacusta sowerbyi is a well-known member of the Limnomedusae and might thus belong here. 
+            </p>
+            <img src="images/trachylinae.jpg">
+            </div>
+            <div id="actinulidae" class="tabcontent">
+                <h3>Subclass Actinulidae</h3>
+                <p>
+                    <b>Order Actinulidae:</b><br><br>
+                    Actinulida are an order of hydrozoans in the subclass Trachylinae. Very small, medusoid Hydrozoa without polyp phase, living in the sand interstitial, solitary, bell entirely or very much reduced, epidermis ciliated, 1-2 whorls of tentacles, statocysts present or not, club shaped and derived of ecto- and entodermal tissue; cnidome may include stenoteles.
+                </p>
+                <img src="images/actinulida.jpg">
+                </div>
+    
+            <div id="notableHydrozoans" class="tabcontent">
+            <h3>Notable Hydrozoans</h3>
+            <p>
+                
+                The members of of order Siphonophorae are actually members of the subclass Hydroidolina of class hydrozoa.
+            </p>
+            <p>
+                Although a siphonophore may appear to be an individual organism, each specimen is in fact a colonial organism composed of medusoid and polypoid zooids that are morphologically and functionally specialized. Zooids are multicellular units that develop from a single fertilized egg and combine to create functional colonies able to reproduce, digest, float, maintain body positioning, and use jet propulsion to move. Most colonies are long, thin, transparent floaters living in the pelagic zone.
+                
+                Like other hydrozoans, some siphonophores emit light to attract and attack prey. While many sea animals produce blue and green bioluminescence, a siphonophore was only the second life form found to produce a red light (the first one being the scaleless dragonfish Chirostomias pliopterus)
+            </p>
+            <img src="images/siphonophore.jpg">
+            </div>
+    
+    
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+
+
+
+    h1.main_header
+            {
+                color: tomato;
+                
+            }
+
+            body
+            {
+                background-color: antiquewhite;
+                
+                /*background-image: url(images/jellyfish1.jpeg);*/
+            }
+            p
+            {
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            hr.header_hr, hr
+    {
+        
+        border: 15;
+        border-top: 3px double #034e315c;
+        
+        
+    }
+
+
+            /* Top bar for navigation */
+    
+            .topnav {
+            background-color: rgb(1, 78, 55);
+            overflow: hidden;
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+            float: left;
+            color: coral;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+            background-color:cornsilk;
+            color:tomato;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+            }
+
+
+        /* The following are the CSS style rules for the hover menu used to access different jellyfish classes */
+        /* Style the tab */
+        .tab {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: rgb(1, 78, 55);
+        width: 12%;
+        height: 1300px;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+        display:block;
+        background-color:inherit;
+        color: tomato;
+        padding: 22px 16px;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: left;
+        cursor: pointer;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: cornsilk;
+        color: tomato;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+        background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        float: left;
+        padding: 0px 12px;
+        border: 1px solid whitesmoke;
+        width: 70%;
+        border-left: none;
+        height: 1200px;
+        display: none;
+        }
+
+
+    </style>
+
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corals</title>
+
+</head>
+<body>
+
+
+    <script>
+
+    function openAnthozoa(evt, coral) 
+        {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) 
+            {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the link that opened the tab
+            document.getElementById(coral).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        } 
+
+
+    </script>
+
+
+    <div class="topnav">
+        <a class="main" href="index.html">Main Page</a>
+        <a href="meduzosa.html">Meduzosa</a>
+        <a href="anthozoa.html">Anthozoa</a>
+        <a href="hydrozoa.html">Hydrozoa</a>
+        <a href="predators.html">Predators</a>
+        <a href="cnidocytes.html">Cnidocytes</a>
+        <a href="life_stages.html">Life Stages</a>
+      </div> 
+
+
+    
+    
+    <h1 class="main_header">Anthozoa</h1>
+    <hr>
+    <p>Anthozoa includes the classes Hexacorallia (Hard Corals), Octocorallia (Soft Corals), as well as Ceriantharia (tube dwelling anomonies)</p>
+
+    <p>
+        Corals, anemones and jellies are related and all classified in the phylum Cnidaria or “stinging needles.” The animals in this group are aquatic, possess stinging cells within their tissues and have a body plan characterized by radial symmetry, which allows all parts of their bodies to be equally receptive and responsive to predator and prey. These animals have a single opening that serves as both the mouth and the anus. Tentacles with stinging structures, called nematocysts, usually surround this opening. These stinging cells, triggered by touch or chemical stimulus, can contain toxins or can be sticky.
+    </p>
+
+    <p>
+        Within the phylum Cnidaria, the class Anthozoa includes corals, anemones, sea pens and seafans. Anthozoa consists of 10 orders and thousands of species. Adults are attached to the seabed, but their larvae are free-floating and can drift to new settlements. Anthozoans can secrete a nonliving substance around the outside of the body to support and protect their soft body tissues. Coloration can vary from red, pink and purple to yellow, blue and orange. While some are only a few inches tall, others can scale several feet.
+    </p>
+
+    <p>
+        The fossil record of Anthozoa extends back 550 million years. The oldest known Anthozoans, polyp-like fossils, come from the Vendian (late Precambrian) period. True corals appeared later, during the Cambrian period. Some species living today first appeared in the middle Triassic period — around the same time as early dinosaurs!
+    </p>
+
+    <p>
+        Coral reefs rival rainforests in diversity of life. Together, they hold the most diverse ecosystems on the planet. Living reefs cover more than 360,000 square miles (936,000 square kilometers) and harbor one of every four ocean species known to man, yet they cover less than 0.1 percent of the entire ocean. 
+    </p>
+
+    <p>
+        They also provide more than a home for fish and other reef dwellers; coral reefs act as an important buffer between land and the daily erosion from waves or occasional storm surges. They often protect a back-reef area of rich productive habitats creating a nursery for the juvenile stages of ocean life.
+    </p>
+
+    <p>
+        Coral reefs also support the tourist industry and a strong fishing industry. Organisms found on coral reefs have provided key ingredients for innumerable medical compounds that treat everything from asthma and cancer to HIV and still show potential for future pharmaceutical discoveries.
+    </p>
+
+    <img src="images/general_coral_reef.jpeg">
+
+
+    <hr>
+
+    <div class="tab">
+        
+        <button class="tablinks" onmouseover="openAnthozoa(event, 'Classes')">Anthozoan Subclasses</button>
+        <button class="tablinks" onmouseover="openAnthozoa(event, 'hexacorallia')">Hexacorallia</button>
+        <button class="tablinks" onmouseover="openAnthozoa(event, 'octocorallia')">Octocorallia</button>
+        <button class="tablinks" onmouseover="openAnthozoa(event, 'ceriantharia')">Ceriantharia</button>
+        
+    </div>
+
+        <div id="Classes" class="tabcontent">
+        <h3>Classes of Anthozoa</h3>
+        <p><b>Subclasses of Anthozoa:</b><br><br>
+            
+            There are three Subclasses of Anthozoa: <b>Hexacorallia</b> (stony corals), <b>Octocorallia</b> (Octocorals), and <b>Ceriantharia</b> (Tube-dwelling anemones)
+            
+        </div>
+
+        <div id="hexacorallia" class="tabcontent">
+        <h3>Hexacorallia</h3>
+        <p>          
+            Hexacorallia is a subclass of Anthozoa comprising approximately 4,300 species of aquatic organisms formed of polyps, generally with 6-fold symmetry. It includes all of the stony corals, most of which are colonial and reef-forming, as well as all sea anemones, and zoanthids, arranged within five extant orders.[2] The hexacorallia are distinguished from another class of Anthozoa, Octocorallia, in having six or fewer axes of symmetry in their body structure; the tentacles are simple and unbranched and normally number more than eight.[3] These organisms are formed of individual soft polyps which in some species live in colonies and can secrete a calcite skeleton. As with all Cnidarians, these organisms have a complex life cycle including a motile planktonic phase and a later characteristic sessile phase. Hexacorallia also include the significant extinct order of rugose corals. 
+        </p>
+        <img src="images/hexacorallia.jpg">
+      </div>
+
+
+      <div id="octocorallia" class="tabcontent">
+        <h3>Octocorallia</h3>
+        <p>
+            Subclass Octocorallia, Octocorals: Despite sharing a similar appearance with stony corals, soft corals, sea pens, gorgonians and sea fans do not build the hard, calcium-carbonate skeleton of stony corals. Instead, these corals may create some internal structural supports that allow them to grow vertically but still sway with ocean currents. Soft corals are always colonial and grow with eight-fold symmetry, which means their tentacles come in groups of eight — hence the name Ocotocoral. Octocorals include the orders Alcyonacea and Helioporace.
+        </p>
+        <img src="images/octocorallia.jpg">
+      </div>
+
+
+      <div id="ceriantharia" class="tabcontent">
+          <h3>Ceriantharia</h3>
+          <p>
+            Subclass Ceriantharia, Tube-dwelling Anemones: This subclass looks similar to sea anemones, but tube-dwelling anemones are known for being solitary and living buried in soft sediments. They live inside tubes made of secreted mucus and organelles, and can recede into these tubes for protection. Ceriantharia includes the orders Spirularia and Penicillaria.
+          </p>
+          <img src="images/ceriantharia.jpg">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
